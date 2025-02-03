@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-image: url("./img/header.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    color: white;
+}
+
+.header > h1 {
+    margin: 0;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 3.5rem;
+}
+
+.header > p {
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: "Libre Baskerville", serif;
+    color: #0EEBAB;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #0EEB60;
+}
+
+.aboutme {
+    margin-top: 100px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile > img {
+    width: 170px;
+    border-radius: 50%;
+}
+
+.profile > h2 {
+    margin: 50px 0;
+}
+
+.profile > p {
+    margin: 0;
+    width: 30%;
+}
+
+hr {
+    border-top: 3px dotted black;
+    width: 100px;
+    margin: 80px auto;
+}
+
+.featpics {
+    width: 220px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feat-container {
+    margin-top: 80px;
+    width: 50%;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 2fr;
+    gap: 20px;
+}
+
+.feattexts > h3 {
+    margin-top: 0;
+}
+
+.contactme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactme > p {
+    width: 50%;
+    text-align: center;
+}
+
+.btn {
+    margin: 50px 0;
+    padding: 10px 20px;
+    font-size: 1.15rem;
+    border-radius: 13px;
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0EEBAB;
+    color: white;
+}
+
+.footer-container > p {
+    margin: 0;
+}
+
+@media (max-width: 430px) {
+    .feat-container {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .header > h1 {
+        font-size: 2.4rem;
+    }
+
+    .header > p {
+        font-size: 1.5rem;
+    }
+}
